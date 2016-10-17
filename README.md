@@ -1,4 +1,4 @@
-# CheckAustrianProjectionProEdition
+# CheckAustrianProjectionDatabase
 
 Grundlagendaten für das GIS-Tool "CheckAustrianProjection".
 
