@@ -1,0 +1,96 @@
+﻿...
+Amstetten
+Baden
+Bludenz
+Braunau am Inn
+Bregenz
+Bruck an der Leitha
+Bruck-Mürzzuschlag
+Deutschlandsberg
+Dornbirn
+Eferding
+Eisenstadt-Umgebung
+Eisenstadt(Stadt)
+Feldkirch
+Feldkirchen
+Freistadt
+Gänserndorf
+Gmünd
+Gmunden
+Graz-Umgebung
+Graz(Stadt)
+Grieskirchen
+Güssing
+Hallein
+Hartberg-Fürstenfeld
+Hermagor
+Hollabrunn
+Horn
+Imst
+Innsbruck-Land
+Innsbruck-Stadt
+Jennersdorf
+Kirchdorf an der Krems
+Kitzbühel
+Klagenfurt Land
+Klagenfurt Stadt
+Korneuburg
+Krems an der Donau(Stadt)
+Krems(Land)
+Kufstein
+Landeck
+Leibnitz
+Leoben
+Lienz
+Liezen
+Lilienfeld
+Linz-Land
+Linz(Stadt)
+Mattersburg
+Melk
+Mistelbach
+Mödling
+Murau
+Murtal
+Neunkirchen
+Neusiedl am See
+Oberpullendorf
+Oberwart
+Perg
+Reutte
+Ried im Innkreis
+Rohrbach
+Rust(Stadt)
+Salzburg-Umgebung
+Salzburg(Stadt)
+Sankt Johann im Pongau
+Sankt Pölten(Land)
+Sankt Pölten(Stadt)
+Sankt Veit an der Glan
+Schärding
+Scheibbs
+Schwaz
+Spittal an der Drau
+Steyr-Land
+Steyr(Stadt)
+Südoststeiermark
+Tamsweg
+Tulln
+Urfahr-Umgebung
+Villach Land
+Villach Stadt
+Vöcklabruck
+Voitsberg
+Völkermarkt
+Waidhofen an der Thaya
+Waidhofen an der Ybbs(Stadt)
+Weiz
+Wels-Land
+Wels(Stadt)
+Wien-Umgebung
+Wien(Stadt)
+Wiener Neustadt(Land)
+Wiener Neustadt(Stadt)
+Wolfsberg
+Zell am See
+Zwettl
