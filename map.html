@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 	<head>
-		<title>CheckAustrianProjection</title>
+		<title>CheckAustrianProjection von Manfred Egger</title>
 		<link rel="stylesheet" href="https://openlayers.org/en/v3.19.0/css/ol.css" type="text/css">
 		<!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
 		<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
@@ -75,16 +75,16 @@
 
 	</head>
 	<body>
-		<h1>Welchen EPSG-CODE hat diese Koordinate in Österreich?</h1>
-		Bitte unbekannte Kooridnate eingeben :
+		<h1>CheckAustrianProjection by Manfred Egger</h1>
+		Bitte unbekannte Koordinate eingeben :
 		
 		X:
-		<input type="number" id="x" value="80271.8">
+		<input type="number" id="x" value="">
 		Y:
-		<input type="number" id="y" value="237254">
+		<input type="number" id="y" value="">
 		<br />
 		<br />
-		Bitte geographische Koordinate möglichst nahe beim unklaren Punkt mit Zoom und Pan aus Karte abfragen:
+		Bitte geographische Koordinate möglichst nahe beim unklaren Punkt mit Zoom und Pan aus Kartenmittelpunkt abfragen:
 		<br />
 		LAT:
 		<input type="number" id="lat" value="47.282979">
@@ -93,11 +93,12 @@
 		<br />
 		<br />
 		<div id="status" >
-			Vergrößern Sie bitte den Kartenausschnitt (+), um ein eindeutiges Eregbnis zu erhalten !!!
+			
 		</div>
 		<br/>
 
-		<div style="width: 50%;height: 50%" id="map" class="map"></div>
+		<div style="width: 50%;height: 50%" id="map" class="map"> </div>
+		Copyright: Manfred Egger, 2016.
 		<script>
 			map = new ol.Map({
 				layers : [new ol.layer.Tile({
