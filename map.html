@@ -2,6 +2,14 @@
 <html>
 	<head>
 		<title>CheckAustrianProjection von Manfred Egger</title>
+		<style>
+			
+			h1{
+				font: 18 px arial, sans-serif;
+			}
+			
+
+		</style>
 		<link rel="stylesheet" href="https://openlayers.org/en/v3.19.0/css/ol.css" type="text/css">
 		<!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
 		<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
@@ -10,7 +18,7 @@
 			function read() {
 				if (map.getView().getZoom() > 12) {
 					document.getElementById('status').style.color = 'orange';
-					document.getElementById('status').innerHTML = "STATUS: Kein passender EPSG-Code für diese Koordinate gefunden.";
+					document.getElementById('status').innerHTML = "STATUS: Kein passender EPSG-Code für diese Koordinate gefunden. Bitte die Eingabefelder kontrollieren oder den Kartenausschnitt ändern.";
 					var lon = document.getElementById('lon').value;
 					var lon_modulo = lon - (lon % 0.25);
 					var lon_string = "" + lon_modulo;
@@ -51,7 +59,7 @@
 									var feature = format.readFeature(wkt);
 									if (ol.extent.containsXY(feature.getGeometry().getExtent(), x, y) == true) {
 										document.getElementById('status').style.color = 'green';
-										document.getElementById('status').innerHTML = "STATUS: Die Koordinate hat mit großer wahrscheinlich den EPSG-Code: " + epsg;
+										document.getElementById('status').innerHTML = "STATUS: Die Koordinate hat mit großer Wahrscheinlichkeit den EPSG-Code: " + epsg;
 									}
 
 								}
@@ -64,10 +72,11 @@
 
 					txtFile.send(null);
 				} else {
-					
+
 					document.getElementById('status').style.color = 'red';
 					
-					document.getElementById('status').innerHTML = "STATUS: Bitte vergrößern Sie mit der Zoomfunktion ('+') den Kartenausschnitt um ein eindeutiges Ergebnis bei der Auswertung zu erhalten.";
+
+					document.getElementById('status').innerHTML = "STATUS: Bitte vergrößern Sie mit der Zoomfunktion ('+') den Kartenausschnitt, um ein eindeutiges Ergebnis zu erhalten.";
 				}
 			}
 
@@ -75,16 +84,16 @@
 
 	</head>
 	<body>
-		<h1>CheckAustrianProjection by Manfred Egger</h1>
+		<h1 style="font-weight: bold">CheckAustrianProjection by Manfred Egger</h1>
 		Bitte unbekannte Koordinate eingeben :
-		
+
 		X:
 		<input type="number" id="x" value="">
 		Y:
 		<input type="number" id="y" value="">
 		<br />
 		<br />
-		Bitte geographische Koordinate möglichst nahe beim unklaren Punkt mit Zoom und Pan aus Kartenmittelpunkt abfragen:
+		Geographische Koordinate nahe beim unklaren Punkt mit Zoom und Pan aus Kartenmittelpunkt abfragen:
 		<br />
 		LAT:
 		<input type="number" id="lat" value="47.282979">
@@ -92,13 +101,13 @@
 		<input type="number" id="lon" value="11.434653">
 		<br />
 		<br />
-		<div id="status" >
-			
+		<div id="status" style="font-weight: bold">
+
 		</div>
 		<br/>
 
-		<div style="width: 50%;height: 50%" id="map" class="map"> </div>
-		Copyright: Manfred Egger, 2016.
+		<div style="width: 50%;height: 50%" id="map" class="map"></div>
+		Copyright: Manfred Egger, 2016. Diese Webseite nutzt die Javascriptbibliothek: <a href="https://openlayers.org/">https://openlayers.org/</a>
 		<script>
 			map = new ol.Map({
 				layers : [new ol.layer.Tile({
@@ -135,6 +144,8 @@
 				read();
 
 			}
+
+
 			map.on('moveend', onMoveEnd);
 		</script>
 	</body>
