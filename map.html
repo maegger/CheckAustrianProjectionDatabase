@@ -77,7 +77,7 @@
 
 					document.getElementById('status').style.color = 'red';
 
-					document.getElementById('status').innerHTML = "STATUS: Bitte vergrößern Sie mit der Zoomfunktion ('+') den Kartenausschnitt bis die Farbe und der Inhalt dieses Text wechselt.";
+					document.getElementById('status').innerHTML = "STATUS: Bitte vergrößern Sie mit der Zoomfunktion('+')den Kartenausschnitt bis die Farbe und der Inhalt dieses Text wechselt. ACHTUNG: Applikation läuft noch nicht auf mobilen Geräten.";
 				}
 			}
 
@@ -86,7 +86,11 @@
 	</head>
 	<body>
 		<h1 style="font-weight: bold">CheckAustrianProjection by Manfred Egger</h1>
-		Bitte zuerst unbekannte Koordinate eingeben  :
+		
+		<div id="status" style="font-weight: bold">
+
+		</div><br />
+		Unbekannte Koordinate eingeben  :
 
 		X:
 		<input type="number" id="x" value="">
@@ -94,7 +98,7 @@
 		<input type="number" id="y" value="">
 		<br />
 		<br />
-		Geographische Referenzkoordinate nahe beim unklaren Punkt mit Zoom und Pan abfragen (ACHTUNG: Diese Applikation funktioniert bei mobilen Geräten noch nicht):
+		Geographische Referenzkoordinate nahe beim unklaren Punkt mit Zoom und Pan abfragen:
 		<br>
 		<br />
 		Mittelpunkt Karte: LAT:
@@ -102,11 +106,9 @@
 		LON:
 		<input type="number" id="lon" value="">
 		<br />
-		<br />
-		<div id="status" style="font-weight: bold">
-
-		</div>
-		<br/>
+		
+		
+		
 
 		<div style="width: 51%;height: 51%" id="map" class="map"></div><br>
 		Copyright: Manfred Egger, 2016. Web: <a href="http://www.egger-gis.at">http://www.egger-gis.at </a>.        Diese Webseite nutzt: <a href="https://openlayers.org/">https://openlayers.org/</a>.
