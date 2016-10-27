@@ -20,7 +20,7 @@
 			function read() {
 				if (map.getView().getZoom() > 12) {
 					document.getElementById('status').style.color = 'orange';
-					document.getElementById('status').innerHTML = "STATUS: Kein passender EPSG-Code für diese Koordinate gefunden. Bitte die Eingabefelder kontrollieren oder den Kartenausschnitt ändern.";
+					document.getElementById('status').innerHTML = "STATUS: Kein passender EPSG-Code gefunden. Ändern Sie den Kartenausschnitt oder überprüfen Sie die Eingabefelder der unbekannten Koordinate.";
 					var lon = document.getElementById('lon').value;
 					var lon_modulo = lon - (lon % 0.25);
 					var lon_string = "" + lon_modulo;
@@ -78,7 +78,7 @@
 
 					document.getElementById('status').style.color = 'red';
 
-					document.getElementById('status').innerHTML = "STATUS: Bitte vergrößern Sie mit der Zoomfunktion('+')den Kartenausschnitt bis die Farbe und der Inhalt dieses Text wechselt."; n.";
+					document.getElementById('status').innerHTML = "STATUS: Bitte vergrößern Sie mit der Zoomfunktion('+')den Kartenausschnitt bis die Farbe und der Inhalt dieses Text wechselt.";
 				}
 			}
 
